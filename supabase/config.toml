@@ -1,0 +1,4 @@
+project_id = "ujdpiucctbbxxujdsmhj"
+
+[functions.mental-health-chat]
+verify_jwt = false
