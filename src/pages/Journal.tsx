@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 
 const prompts = [
   { emoji: "💭", text: "Reflect on your emotional journey today", color: "from-primary to-secondary" },
-  { emoji: "🎯", text: "What goals did you work towards?", color: "from-secondary to-chart-5" },
-  { emoji: "✨", text: "Celebrate a small win from today", color: "from-chart-4 to-chart-4" },
+  { emoji: "🎯", text: "What goals did you work towards?", color: "from-secondary to-accent" },
+  { emoji: "✨", text: "Celebrate a small win from today", color: "from-accent to-primary" },
 ];
 
 export default function Journal() {
@@ -80,7 +80,7 @@ export default function Journal() {
                 setContent(`${prompt.text}\n\n`);
               }}
               className={cn(
-                "p-4 rounded-xl text-primary-foreground text-left transition-all hover:scale-[1.02]",
+                "p-4 rounded-xl text-primary-foreground text-left transition-all hover:scale-[1.02] hover:shadow-lg border border-primary/20",
                 `bg-gradient-to-br ${prompt.color}`
               )}
             >

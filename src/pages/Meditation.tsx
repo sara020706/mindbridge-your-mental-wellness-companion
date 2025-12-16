@@ -10,7 +10,7 @@ const meditations = [
     duration: "5 min",
     category: "Breathing",
     emoji: "🌅",
-    gradient: "from-chart-4 to-chart-4/70",
+    gradient: "from-accent to-primary",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const meditations = [
     duration: "15 min",
     category: "Sleep",
     emoji: "🌙",
-    gradient: "from-secondary to-chart-5",
+    gradient: "from-secondary to-accent",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const meditations = [
     duration: "7 min",
     category: "Focus",
     emoji: "🎯",
-    gradient: "from-accent to-accent/70",
+    gradient: "from-primary to-accent",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const meditations = [
     duration: "12 min",
     category: "Calming",
     emoji: "🌿",
-    gradient: "from-accent to-primary",
+    gradient: "from-accent to-secondary",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const meditations = [
     duration: "20 min",
     category: "Relaxation",
     emoji: "✨",
-    gradient: "from-chart-5 to-primary",
+    gradient: "from-secondary to-primary",
   },
 ];
 
@@ -183,9 +183,9 @@ export default function Meditation() {
               key={meditation.id}
               onClick={() => setSelectedMeditation(meditation.id)}
               className={cn(
-                "relative overflow-hidden rounded-2xl p-6 text-left transition-all hover:scale-[1.02]",
+                "relative overflow-hidden rounded-2xl p-6 text-left transition-all hover:scale-[1.02] hover:shadow-lg border border-primary/20",
                 `bg-gradient-to-br ${meditation.gradient}`,
-                selectedMeditation === meditation.id && "ring-2 ring-primary ring-offset-2"
+                selectedMeditation === meditation.id && "ring-2 ring-primary ring-offset-2 ring-offset-background"
               )}
             >
               <span className="text-4xl mb-4 block">{meditation.emoji}</span>
