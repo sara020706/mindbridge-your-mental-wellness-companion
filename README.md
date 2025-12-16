@@ -425,9 +425,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Documentation**: [Lovable Docs](https://docs.lovable.dev)
-- **Issues**: [GitHub Issues](https://github.com/sara020706/mindbridge-your-mental-wellness-companion/issues)
-- **Project URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+contact:E Parthasrathy(ps2601296@gmail.com)
+        K S Shankaran(sibivicky80@gmail.com)
 
 ---
 
