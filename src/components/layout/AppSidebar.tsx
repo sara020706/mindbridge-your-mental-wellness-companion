@@ -70,8 +70,8 @@ export function AppSidebar({ darkMode, setDarkMode }: AppSidebarProps) {
         <div className="flex flex-col h-full p-6">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-xl">
-              🌉
+            <div className="w-10 h-10 rounded-xl overflow-hidden bg-transparent flex items-center justify-center">
+              <img src="/assets/mindspring.png" alt="MindSpring" className="w-full h-full object-cover" />
             </div>
             <div>
               <h1 className="font-semibold text-lg text-sidebar-foreground">MindBridge</h1>
